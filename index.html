@@ -183,7 +183,7 @@
           <section id="contact" class="row main-section ">
             <div class="col-xs-12 col-md-5 contact-form-wrapper">
               <h2 class="heading"> drop me a line </h2>
-              <form class="contact-form" action="/submitMain" method="post">
+              <form class="contact-form" id="contact_form">
                 <div class="contact-form-el">
                   <input type="text" id="name" name="name" class="input" required></input>
                   <label for="name"> your name </label>
@@ -208,5 +208,12 @@
         </footer>
 
         <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-    </body>
+        <script src="http://static_formx.cyces.co/tracker/v1/bundle.js"></script>
+        <script>
+        var formx = FormX.set()
+        formx.trackProject('Portfolio Github Pages_674b1ca7-7960-4cf2-ab1e-b0ea224e96f1')
+        formx.trackForm('Contact Form_c92621fe-b523-4788-8343-2337125de8e8', 'contact_form')
+        formx.start()
+        </script>
+      </body>
 </html>
